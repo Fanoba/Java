@@ -77,9 +77,39 @@ function Numero(){
     }
   }
   
-  
-  
+
   suma(3,2,4)
   multiplica(3,2,5)
   EsString(3,"h","a")
   VerificarVocales("a")
+
+let nombres=["Gil","Rock","Emilio","Bryan"]
+nombres.push["Luis"]
+console.log(nombres)
+nombres.pop()
+console.log(nombres)
+let index=nombres.indexOf("Gil")
+
+if(index!==-1){
+  console.log("El nombre esta en el arreglo")
+}
+else{
+  console.log("No esta")
+}
+const numeros=[4,3,4,2,1]
+const raiz = numeros.map(Math.sqrt)
+console.log(raiz)
+var n=11
+for(var i=1; i<n; i++){
+  console.log([i])
+}
+
+function Car(make, model) {
+  this.make = make;
+  this.model = model;
+  this.displayInfo = function() {
+    console.log("Make: ${this.make}, Model: ${this.model}");
+  };
+}
+const myCar = new Car('Toyota', 'Corolla‘');
+myCar.displayInfo();
